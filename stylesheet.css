@@ -1,0 +1,149 @@
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --dark_blue: hsl(234, 12%, 34%);
+    --grayish_blue: hsl(229, 6%, 66%);
+    --dark_gray: hsl(0, 0%, 92%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    background-color: var(--dark_gray);
+    color: var(--dark_blue);
+    margin-top: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 87.5rem;
+    margin: auto;
+}
+
+.reliable {
+    text-align: center;
+    max-width: 30rem;
+    padding-right:1.5rem;
+    padding-left:1.5rem;
+}
+
+h2 {
+    margin:0;
+}
+
+.reliable .regular_h2 {
+    font-weight: 200;
+}
+
+.reliable h2 {
+    font-weight: 600;
+}
+
+.cards_container {
+    padding-right:1.5rem;
+    padding-left:1.5rem;
+    
+}
+
+#card {
+    min-width: 20rem;
+    max-width:24rem;
+    max-height:15.6rem;
+    min-height: 14.5rem;
+}
+
+.card_one {
+    border-top: 5px solid var(--cyan);
+    border-radius: 5px;
+    padding:1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: -13px 4px 73px -3px rgba(0,0,0,0.20);
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.card_two {
+    border-top: 5px solid var(--red);
+    border-radius: 5px;
+    padding:1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: -13px 4px 73px -3px rgba(0,0,0,0.20);
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.card_three {
+    border-top: 5px solid var(--orange);
+    border-radius: 5px;
+    padding:1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: -13px 4px 73px -3px rgba(0,0,0,0.20);
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.card_four {
+    border-top: 5px solid var(--blue);
+    border-radius: 5px;
+    padding:1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: -13px 4px 73px -3px rgba(0,0,0,0.20);
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    float: right;
+    padding-right: 1.5rem;
+    padding-top:1.5rem;
+}
+
+.cards_container h2 {
+    font-weight: 600;
+}
+
+.cards_container p {
+    margin: 0;
+    line-height: 1.6rem;
+}
+
+@media only screen and (max-width: 20rem) {
+        body {
+            flex-direction: column;
+        }
+}
+
+@media only screen and (min-width:62.5rem) {
+   .reliable {
+       margin: auto;
+   }
+   
+    .cards_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #card {
+        margin: 1.5rem;
+    }
+    
+    .stack {
+        display: flex;
+        flex-direction: column;
+    }
+}
